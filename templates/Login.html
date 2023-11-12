@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+</head>
+
+<body>
+{% block main %}
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    <form method="POST">
+        <label for="username">UserName</label><input type="text" name="username" id="username" placeholder="Username" Required><br>
+        <label for="password">Password</label><input type="password" name="password" id="password" placeholder="Password" Required><br>
+
+        <input type="button" onclick="window.location.href='main'" value="Login" id="login-form-submit" />
+    </form>
+  </main>
+{% endblock %}
+</body>
+
+</html>
